@@ -5,7 +5,7 @@
             <label for="custom-search-selector">Search by:</label>
             <select name="selector" class="search-selector" id="custom-search-selector" >
                 <option value="location">Location</option>
-                <option value="location">Name</option>
+                <option value="community_name">Name</option>
             </select>
         </div>
         <div class="form-group-search">
