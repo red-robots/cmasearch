@@ -48,7 +48,13 @@ get_header();
     ?>
 
     <div class="search-custom-result" >
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        <div class="search_title">
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </div>
+        <div class="search_address">
+            <?php echo ( get_field('address') ) ? get_field('address') : ''; ?>
+        </div>
+        
     </div>
            
     <?php   

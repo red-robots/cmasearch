@@ -49,6 +49,7 @@
 		$manager_name 		= get_field('manager_name');
 		$manager_phone 		= get_field('manager_phone');
 		$manager_email 		= get_field('manager_email');
+		$address 			= get_field('address');
 
 		?>
 
@@ -60,6 +61,10 @@
 				<div class="properties-group">
 					<div class="properties-label">Community Name:</div>
 					<div class="properties-value"><?php echo $community_name; ?></div>
+				</div>
+				<div class="properties-group">
+					<div class="properties-label">Address:</div>
+					<div class="properties-value"><?php echo $address; ?></div>
 				</div>
 				<div class="properties-group">
 					<div class="properties-label">Manager Name:</div>

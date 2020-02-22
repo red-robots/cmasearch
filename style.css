@@ -6418,3 +6418,21 @@ span.highlighted-color{
 	font-weight: bold;
 	color: #cd2653;
 }
+
+.search-custom-result{
+	padding: 10px 0;
+	display: block;
+}
+
+.search_title, .search_address{
+	padding: 0;
+}
+
+.search_title a, a:hover{
+	text-decoration: none;
+}
+
+.search_address{
+	font-size: 15px;
+	margin-top: -10px;
+}
