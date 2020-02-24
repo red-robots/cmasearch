@@ -177,6 +177,9 @@ require get_template_directory() . '/inc/custom-css.php';
 // Custom Post Types
 require get_template_directory() . '/inc/post-types.php';
 
+// Custom Scripts
+require get_template_directory() . '/inc/scripts.php';
+
 /**
  * Register and Enqueue Styles.
  */
@@ -194,6 +197,8 @@ function twentytwenty_register_styles() {
 	wp_enqueue_style( 'twentytwenty-print-style', get_template_directory_uri() . '/print.css', null, $theme_version, 'print' );
 
 	wp_enqueue_style( 'twentytwenty-custom-style', get_template_directory_uri() . '/assets/css/custom.css', array(), $theme_version, true );
+
+
 
 }
 
@@ -760,3 +765,19 @@ function twentytwenty_get_elements_array() {
 	*/
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
+
+
+/*
+*	Google Map API for ACF
+*/
+
+
+function my_acf_google_map_api( $api ){
+	
+	$api['key'] = 'AIzaSyAeqhZre9-4JooxIFFhcgGmWQ2de4Y4AhE';
+	
+	return $api;
+	
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
