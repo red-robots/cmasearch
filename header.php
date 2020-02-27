@@ -21,7 +21,7 @@
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 		<?php wp_head(); ?>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW8ieE1YvFCvk792K2rPfErHL6ALcb9lU"></script>
+		
 
 	</head>
 
