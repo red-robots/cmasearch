@@ -774,10 +774,19 @@ function twentytwenty_get_elements_array() {
 
 function my_acf_google_map_api( $api ){
 	
-	$api['key'] = 'AIzaSyAeqhZre9-4JooxIFFhcgGmWQ2de4Y4AhE';
+	$api['key'] = 'AIzaSyBW8ieE1YvFCvk792K2rPfErHL6ALcb9lU';
 	
 	return $api;
 	
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+
+/*
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyBW8ieE1YvFCvk792K2rPfErHL6ALcb9lU');
+}
+
+add_action('acf/init', 'my_acf_init');
+*/

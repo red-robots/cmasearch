@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Custom Search 
+ * Template Name: Custom Search
  */
 
 get_header();

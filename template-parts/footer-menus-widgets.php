@@ -92,9 +92,7 @@ if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) 
 
 						<?php if ( $has_sidebar_1 ) { ?>
 
-							<div class="footer-widgets column-one grid-item">
-								<?php include( 'custom-search.php'); ?>
-								<?php dynamic_sidebar( 'sidebar-1' ); ?>
+							<div class="footer-widgets column-one grid-item">								<?php dynamic_sidebar( 'sidebar-1' ); ?>
 							</div>
 
 						<?php } ?>
